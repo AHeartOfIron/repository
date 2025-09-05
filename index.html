@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо - Всі проекти</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <header class="animate__animated animate__fadeInDown">
+            <h1>Demining system</h1>
+            <p>Інноваційні рішення та креативні ідеї</p>
+        </header>
+        
+        <div class="projects animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="project-card" onclick="window.open('https://aheartofiron.github.io/sos-emergency-system/')">
+                <h3>SOS Система</h3>
+                <p>Система екстреного виклику та координації допомоги<br><small>Потребує розгортання цього додатку на сервері. На цьому ресурсі - тестовий режим.</small></p>
+            </div>
+            
+            <div class="project-card" onclick="window.open('https://aheartofiron.github.io/coordinate-converter/coordinate_converter.html')">
+                <h3>Конвертер координат</h3>
+                <p>Перетворення координат між різними системами</p>
+            </div>
+            
+            <div class="project-card" onclick="window.open('https://aheartofiron.github.io/calculator/')">
+                <h3>Калькулятор</h3>
+                <p>Багатофункціональний калькулятор для різних розрахунків</p>
+            </div>
+            
+            <div class="project-card" onclick="window.open('https://aheartofiron.github.io/area-calculator/area_calculator.html')">
+                <h3>Калькулятор площ</h3>
+                <p>Розрахунок площ геометричних фігур та територій</p>
+            </div>
+            
+            <div class="project-card" onclick="window.open('https://aheartofiron.github.io/Field_Calc/')">
+                <h3>Польовий калькулятор</h3>
+                <p>Спеціалізовані розрахунки для польових умов</p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Контакти</h3>
+                <p>Зв'яжіться зі мною для співпраці</p>
+                <div class="contact-buttons">
+                    <button onclick="window.open('tel:+380980088415')">Дзвінок</button>
+                    <button onclick="window.open('mailto:illia.usachov@gmail.com')">Email</button>
+                    <button onclick="window.open('https://t.me/AHeartOfIron')">Telegram</button>
+                    <button onclick="window.open('https://wa.me/380980088415')">WhatsApp</button>
+                    <button onclick="window.open('https://signal.me/#p/+380980088415')">Signal</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="animate__animated animate__fadeInUp animate__delay-2s">
+            <p><span class="author-name">&copy; 2025 ILLIA USACHOV</span> | <a href="https://github.com/AHeartOfIron">GITHUB</a> | <a href="license.html">Ліцензія</a></p>
+        </footer>
+    </div>
+    
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 100, density: { enable: true, value_area: 800 } },
+                color: { value: ['#ff0000', '#8b0000', '#ffffff'] },
+                shape: { type: 'circle' },
+                opacity: { value: 0.6, random: true },
+                size: { value: 2, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 120,
+                    color: '#ff0000',
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'grab' },
+                    onclick: { enable: true, mode: 'push' }
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 0.8 } },
+                    push: { particles_nb: 6 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
